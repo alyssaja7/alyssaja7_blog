@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Whale's Eyeslash | Blog
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
+description: 'Seize the day'
+keywords: Tech, Life
+author: Alyssa Ning
 language: en
 timezone: ''
 
@@ -37,25 +37,36 @@ default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  field: post # Apply to the whole site
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
+#highlight:
+#  enable: true
+#  line_number: true
+#  auto_detect: false
+#  tab_replace: ''
+#  wrap: true
+#  hljs: false
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+  enable: false
+
 prismjs:
   enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
+
+#代码高亮
+prism_plugin:
+  mode: 'preprocess'
+  theme: 'tomorrow'
+  line_number: false
+  custom_css:
+
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -98,7 +109,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
