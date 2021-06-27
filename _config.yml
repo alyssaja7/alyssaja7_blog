@@ -52,12 +52,16 @@ future: true
 #  wrap: true
 #  hljs: false
 highlight:
-  enable: false
-
+  enable: false #set it to false
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: false #false
+  hljs: false
 prismjs:
-  enable: false
+  enable: true #set it to true
   preprocess: true
-  line_number: true
+  line_number: true #optional
   tab_replace: ''
 
 #代码高亮
@@ -106,10 +110,11 @@ include:
 exclude:
 ignore:
 
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly
+theme: minima
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
